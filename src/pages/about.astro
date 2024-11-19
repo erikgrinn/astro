@@ -20,17 +20,6 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <!-- is:global overwrites global.css, local scope -->
-  <style is:global define:vars={{skillColor, fontWeight, textCase}}> 
-    h1 {
-      color: #ff9776
-    }
-    .skill {
-      color: var(--skillColor);
-      font-weight: var(--fontWeight);
-      text-transform: var(--textCase);
-    }
-  </style>
   <h2>... and my new Astro site!</h2>
   
   <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
@@ -54,5 +43,16 @@ const textCase = "uppercase";
 
   {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>
+  <!-- is:global overwrites global.css, local scope -->
+<style is:global define:vars={{skillColor, fontWeight, textCase}}> 
+  h1 {
+    color: #ff9776
+  }
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>
 
 

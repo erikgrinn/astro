@@ -4,8 +4,7 @@ export async function GET(context) {
   return rss({
     title: 'Erik Grinn | Blog',
     description: 'My journey learning Astro',
-    // site: context.site,
-    site: 'https://erikgrinn.github.io/astro/',
+    site: context.site,
     items: await pagesGlobToRssItems(import.meta.glob('./**/*.md')),
     customData: `<language>en-us</language>`,
   });

@@ -1,6 +1,15 @@
-html {
+  html {
     background-color: #f1f5f9;
     font-family: sans-serif;
+  }
+
+  html.dark {
+    background-color: #0d0950;
+    color: #fff;
+  }
+  
+  .dark .nav-links a {
+    color: #fff;
   }
   
   body {
@@ -23,9 +32,9 @@ html {
     color:inherit;
   } */
 
-/* nav styles */
+  /* nav styles */
 
-.hamburger {
+  .hamburger {
     padding-right: 20px;
     cursor: pointer;
   }
@@ -38,7 +47,7 @@ html {
     background-color: #ff9776;
   }
 
-.nav-links {
+  .nav-links {
     width: 100%;
     top: 5rem;
     left: 48px;

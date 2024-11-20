@@ -2,6 +2,9 @@
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    // added below for content collections tutorial 2 - tutorial doesn't show above 2
+    "strictNullChecks": true,
+    "allowJs": true
   }
 }
